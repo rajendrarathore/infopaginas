@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Solicitarle una Reunión al Cliente</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Solicitar Coordinar Reunión</name>
+    <style>none</style>
+    <subject>Solicitud para Reunión-</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

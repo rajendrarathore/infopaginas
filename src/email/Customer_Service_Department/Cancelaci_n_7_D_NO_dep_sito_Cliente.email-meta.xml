@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Respuesta a Cliente de Cancelación 7-D que NO se ha cobrado depósito</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cancelación 7-D- NO depósito- Cliente</name>
+    <style>none</style>
+    <subject>Solicitud de Cancelación-</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

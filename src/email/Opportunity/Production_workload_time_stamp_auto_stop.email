@@ -1,0 +1,7 @@
+Hello {!TimeStamp__c.CreatedBy}<br/>
+<br/>
+The timer of <a href="{!$Setup.URL_Setting__c.Internal_URL__c}/{!TimeStamp__c.Job_OrderId__c}">{!TimeStamp__c.Job_Order__c}</a> has been running for 2 hours. Are you still working on this?<br/><br/>
+
+Have a nice day!<br/><br/>
+
+Salesforce assistant

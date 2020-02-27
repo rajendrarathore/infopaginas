@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Su perfil en infopaginas ha sido creado.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PERFIL LISTO</name>
+    <style>none</style>
+    <subject>Su perfil de negocio ha sido creado - [CLIENTE]</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notificacion al cliente de solicitar su cancelación a Servicio al Cliente. Este email debe tener copia al vendedor y Gerente de Ventas</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CANCELACIONES</name>
+    <style>none</style>
+    <subject>Solicitud de Cancelación Recibida</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

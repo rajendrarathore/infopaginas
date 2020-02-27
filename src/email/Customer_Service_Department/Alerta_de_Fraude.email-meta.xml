@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alerta de FRAUDE, email para notificar a nuestro cliente</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Infopaginas_Letterhead</letterhead>
+    <name>Alerta de Fraude</name>
+    <style>freeForm</style>
+    <subject>Alerta de Fraude, No te dejes engañar...</subject>
+    <textOnly>Estimado Cliente:
+
+Como medida de seguridad, y ante la nueva modalidad de esquema de fraude, le informamos que Infopáginas protege toda información privilegiada de cada uno de sus clientes.
+
+
+Es posible que usted o algún empleado en su negocio reciba o haya recibido una llamada fraudulenta con relación a un cobro por parte de Infopaginas. Esto es un esquema de fraude completamente ajeno a nuestra empresa.
+
+
+Le exhortamos a que oriente a sus empleados para que no brinden ningún tipo de información, ni que se sientan amedrentados.  Los que se comunican son muy insistentes y amenazan con abogados y agencias de cobro.  Lamentablemente Infopáginas no tiene control de dicho esquema.  Estamos comprometidos con los comerciantes puertorriqueños y por tal razón nuestras negociaciones son a través de un Consultor de Medios que le visita y no realizamos ningún tipo de negociación por teléfono con nuestros clientes.
+
+
+Infopáginas le garantiza que toda información sensible y privilegiada está completamente segura.
+
+
+De tener alguna duda al respecto, se puede comunicar a nuestras oficinas al 787-625-0555 o a través de correo electrónico servicioalcliente@infopaginas.com y con mucho gusto le orientamos.
+
+
+Atentamente,
+
+
+Departamento de Servicio al Cliente
+
+
+Infopáginas, Inc.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

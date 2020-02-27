@@ -1,0 +1,266 @@
+<messaging:emailTemplate subject="Formulario información de Negocio | Premiazos" recipientType="Contact" relatedToType="Form__c">
+    <messaging:htmlEmailBody >
+        
+            <body bgcolor="#268da4!important" style="margin:0;padding:10px 0 0 0;background:#268da4!important">
+            <table border="0" style="border:none; width: 100%; height: 100%">
+                <tr align="center">
+                    <td style="width: 80%">
+                        <table border="0" style="border:none; width: 80%">
+                            <tr>
+                                <td bgcolor="#ffffff">
+                                    <img src="http://www.infopaginasmedia.com/assets/images/logo-infopaginas-email.png" style="padding: 30px; width: 250px"/>
+                                    
+                                    
+                                     <p style="font-family:Arial;font-size:15px;line-height:18px; padding: 0 30px 10px 30px; color:#000000 !important">
+                                    
+                                        <b>Formulario llenado por:</b> {!RelatedTo.Formulario_llenado_por__c} <br />
+                                        <b>Nombre de la Empresa:</b>{!RelatedTo.Nombre_de_la_Empresa__c}<br />
+                                        <b>Opportunity Owner:</b>  <apex:outputLabel value="{!RelatedTo.Opportunity_Owner__c}" escape="false"></apex:outputLabel> <br /><br />
+                                        
+                                        <b>Puntos por Shares en Redes Sociales:</b><br />
+                                        Facebook: {!RelatedTo.Facebook__c}<br />
+                                        Twitter: {!RelatedTo.Twitter__c}<br />
+                                        Foto: {!RelatedTo.Foto__c}<br /><br />
+                                        
+                                        <b>Empleados Autorizados:</b><br />
+                                        Empleado #1: {!RelatedTo.Empleado_1__c}<br />
+                                        Empleado #2: {!RelatedTo.Empleado_2__c}<br />
+                                        Empleado #3: {!RelatedTo.Empleado_3__c}<br />
+                                        Empleado #4: {!RelatedTo.Empleado_4__c}<br />
+                                        Empleado #5: {!RelatedTo.Empleado_5__c}<br />
+                                        <br/>
+                                        <br/>
+                                        View More Details: {!$Setup.URL_Setting__c.Internal_URL__c}/{!RelatedTo.Id}<br/>
+                                    </p>
+                                    <p style="font-family:Arial;font-size:13px;line-height:18px; padding: 0 30px 30px 30px; color:#000000 !important">
+                                         <b>Categoría del Negocio:</b> <apex:outputField value="{!RelatedTo.Business_Categories__c}"/>  <br /><br />
+                                         Detalles y/o Recompensas Adicionales: {!RelatedTo.Detalles_y_o_Recompensas_Adicionales__c}<br />
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Autos','','display:none;')}">
+                                            <hr/>
+                                            <b>Autos → Tipo de Negocio:</b> <apex:outputField value="{!RelatedTo.Autos_Tipo_de_Negocio__c}"/>{<br />
+                                            <b>Autos → Tipo de Negocio → Otros:</b> {!RelatedTo.Favor_de_entrar_el_Tipo_de_Negocio__c}<br /><br />
+                                            <hr/>
+                                            <b>Car Wash:</b><br />
+                                            Lavado Interior: {!RelatedTo.Lavado_Interior__c}<br />
+                                            Lavado Exterior: {!RelatedTo.Lavado_Exterior__c}<br />
+                                            Lavado Interior Y Exterior: {!RelatedTo.Lavado_Interior_y_Exterior__c}<br />
+                                            Tratamiento Interiores: {!RelatedTo.Tratamiento_Interiores__c}<br />
+                                            Tratamiento Exteriores: {!RelatedTo.Tratamiento_Exteriores__c}<br />
+                                            Detailing: {!RelatedTo.Detailing__c}<br />
+                                            
+                      
+                                            <hr/>
+                                            
+                                            <b>Centro de Piezas y Servicio:</b><br />
+                                            Cambio De Aceite Filtro: {!RelatedTo.Cambio_de_Aceite_y_Filtro__c} <br />
+                                            Lavado Exterior e Interior: {!RelatedTo.Lavado_Exterior_e_Interior__c}<br />
+                                            Lavado de Motor: {!RelatedTo.Lavado_de_Motor__c}<br />
+                                            Inspeccion Basica: {!RelatedTo.Inspecci_n_B_sica__c}<br />
+                                            Montura de Pads: {!RelatedTo.Montura_de_Pads__c}<br />
+                                            Rotacion de Gomas: {!RelatedTo.Rotaci_n_de_Gomas__c}<br />
+                                            Balanceo de Gomas: {!RelatedTo.Balanceo_de_Gomas__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Gomera:</b><br />
+                                            Inyeccion de Gomas: {!RelatedTo.Inyecci_n_de_Gomas__c}<br />
+                                            Parcho de Gomas: {!RelatedTo.Parcho_de_Gomas__c}<br />
+                                            Balanceo de 2 Gomas: {!RelatedTo.Balanceo_de_2_Gomas__c}<br />
+                                            Rotacion de 4 Gomas: {!RelatedTo.Rotaci_n_de_4_Gomas__c}<br />
+                                            Alineamiento: {!RelatedTo.Alineamiento__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Recompensas (si marco Tipo de Negocio → Otros):</b><br />
+                                            Recompensa #1:  {!RelatedTo.Autos_Otros_Recompensa_1__c}<br />
+                                            Recompensa #2:  {!RelatedTo.Autos_Otros_Recompensa_2__c}<br />
+                                            Recompensa #3:  {!RelatedTo.Autos_Otros_Recompensa_3__c}<br /><br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Comida_Bebida','','display:none;')}">
+                                            <hr/>
+                                             <b>Comida y Bebida → Tipo de Negocio:</b> <apex:outputField value="{!RelatedTo.Comida_y_Bebida_Tipo_de_Negocio__c}"/> <br />
+                                             <b>Comida y Bebida → Tipo de Negocio → Otros:</b> {!RelatedTo.Favor_de_entrar_el_Tipo_de_Negocio_Otros__c}<br /><br />
+                                            <hr/>
+                                            <b>Restaurante o Cafetería:</b><br />
+                                            Aperitivo: {!RelatedTo.Aperitivo__c}<br />
+                                            Postre: {!RelatedTo.Postre__c}<br />
+                                            Trago: {!RelatedTo.Trago__c}<br />
+                                            Jarra: {!RelatedTo.Jarra__c}<br />
+                                            Plato Principal: {!RelatedTo.Plato_Principal__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Panadería, Repostería o Café:</b><br />
+                                            Cafe: {!RelatedTo.Caf__c}<br />
+                                            Fritura: {!RelatedTo.Fritura__c}<br />
+                                            Dulce: {!RelatedTo.Dulce__c}<br />
+                                            Café con Tostadas: {!RelatedTo.Caf_con_Tostadas__c}<br />
+                                            Sandwich: {!RelatedTo.S_ndwich__c}<br />
+                                            Desayuno: {!RelatedTo.Desayuno__c}<br />
+                                            Almuerzo: {!RelatedTo.Almuerzo__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Heladería:</b><br />
+                                            Barquilla o Vaso - 1 scoop: {!RelatedTo.Barquilla_o_Vaso_1_scoop__c}<br />
+                                            Barquilla o Vaso - 2 scoops: {!RelatedTo.Barquilla_o_Vaso_2_scoops__c}<br />
+                                            Sundae: {!RelatedTo.Sundae__c}<br />
+                                            Banana Split: {!RelatedTo.Banana_Split__c}<br />
+                                            Batida: {!RelatedTo.Batida__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Foodtrucks:</b><br />
+                                            Recompensa #1: {!RelatedTo.Food_Trucks_Recompensa_1__c}<br />
+                                            Recompensa #2: {!RelatedTo.Food_Trucks_Recompensa_2__c}<br />
+                                            Recompensa #3: {!RelatedTo.Food_Trucks_Recompensa_3__c}<br /><br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Pizzería:</b><br />
+                                            Trago: {!RelatedTo.Trago_Pizzeria__c}<br />
+                                            Un Slice: {!RelatedTo.Un_Slice__c}<br />
+                                            Jarra: {!RelatedTo.Jarra_Pizzeria__c}<br />
+                                            Alitas: {!RelatedTo.Alitas__c}<br />
+                                            Aperitivo: {!RelatedTo.Aperitivo_Pizzeria__c}<br />
+                                            Postre: {!RelatedTo.Postre_Pizzeria__c}<br />
+                                            Pizza Personal 1 ingrediente: {!RelatedTo.Pizza_Personal_1_ingrediente__c}<br />
+                                            Pizza Mediana 1 ingrediente: {!RelatedTo.Pizza_Mediana_1_ingrediente__c}<br />
+                                            Pizza Grande 1 ingrediente: {!RelatedTo.Pizza_Grande_1_ingrediente__c}<br />
+                                            
+                                            <hr/>
+                                            
+                                            <b>Recompensas (si marco Tipo de Negocio → Otros):</b><br />
+                                            Recompensa #1:  {!RelatedTo.Recompensa_1_Otros__c}<br />
+                                            Recompensa #2:  {!RelatedTo.Recompensa_2_Otros__c}<br />
+                                            Recompensa #3:  {!RelatedTo.Recompensa_3_Otros__c}<br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Hoteles','','display:none;')}">
+                                            <hr/>
+                                            
+                                            <b>Recompensas:</b><br />
+                                            Recompensa #1: {!RelatedTo.Hoteles_Recompensa_1__c}<br />
+                                            Recompensa #2: {!RelatedTo.Hoteles_Recompensa_2__c}<br />
+                                            Recompensa #3: {!RelatedTo.Hoteles_Recompensa_3__c}<br /><br />
+                                            
+                                        </div>
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Lavanderias','','display:none;')}">
+                                            <hr/>
+                                            <b>Lavanderías:</b><br />
+                                            Lavada regular gratis: {!RelatedTo.Lavada_regular_gratis__c}<br />
+                                            Lavada regular + secado gratis: {!RelatedTo.Lavada_regular_secado_gratis__c}<br />
+                                            Lavada industrial: {!RelatedTo.Lavada_industrial__c}<br /><br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Mascotas','','display:none;')}">
+                                            <hr/>
+                            
+                                            <b>Mascotas:</b><br />
+                                            Corte de uñas: {!RelatedTo.Corte_de_u_as__c}<br />
+                                            Limpieza de orejas: {!RelatedTo.Limpieza_de_orejas__c}<br />
+                                            Grooming básico: {!RelatedTo.Grooming_b_sico__c}<br />
+                                            Tratamiento de Pulgas y Garrapatas: {!RelatedTo.Tratamiento_de_Pulgas_y_Garrapatas__c}<br />
+                                            
+                                        </div>
+                                        
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Recreacion_Deportes','','display:none;')}">
+                                            <hr/>
+                                            <b>Recompensas:</b><br />
+                                            Recompensa #1: {!RelatedTo.Recreaci_n_y_Deportes_Recompensa_1__c}<br />
+                                            Recompensa #2: {!RelatedTo.Recreaci_n_y_Deportes_Recompensa_2__c}<br />
+                                            Recompensa #3: {!RelatedTo.Recreaci_n_y_Deportes_Recompensa_3__c}<br /><br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Salones_de_Belleza','','display:none;')}">
+                                            <hr/>
+                                            <b>Salones de Belleza:</b><br />
+                                            Blower: {!RelatedTo.Blower__c}<br />
+                                            Recorte: {!RelatedTo.Recorte__c}<br />
+                                            Manicura: {!RelatedTo.Manicura__c}<br />
+                                            Pedicura: {!RelatedTo.Pedicura__c}<br />
+                                            Mani-Pedi: {!RelatedTo.Mani_Pedi__c}<br />
+                                            Mascarilla: {!RelatedTo.Mascarilla__c}<br />
+                                            Tratamiento Hidratante: {!RelatedTo.Tratamiento_Hidratante__c}<br />
+                                            Retoque de color de pelo: {!RelatedTo.Retoque_de_color_de_pelo__c}<br />
+                                            Brazillian Blowout: {!RelatedTo.Brazillian_Blowout__c}<br />
+                                            Keratina: {!RelatedTo.Keratina__c}<br /><br />
+                                            
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Salud_Bienestar','','display:none;')}">
+                                            <hr/>
+                                            <b>Recompensas:</b><br />
+                                            Recompensa #1: {!RelatedTo.Salud_y_Bienestar_Recompensa_1__c}<br />
+                                            Recompensa #2: {!RelatedTo.Salud_y_Bienestar_Recompensa_2__c}<br />
+                                            Recompensa #3: {!RelatedTo.Salud_y_Bienestar_Recompensa_3__c}<br /><br />
+                                        </div>
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Spa','','display:none;')}">
+                                            <hr/>
+                                            <b>Spa:</b><br />
+                                            Manicura: {!RelatedTo.Manicura_Spa__c}<br />
+                                            Pedicura: {!RelatedTo.Pedicura_Spa__c}<br />
+                                            Facial básico: {!RelatedTo.Facial_b_sico_Spa__c}<br />
+                                            Facial limpieza profunda: {!RelatedTo.Facial_limpieza_profunda_Spa__c}<br />
+                                            Masaje relajante: {!RelatedTo.Masaje_relajante_Spa__c}<br />
+                                            Body wrap: {!RelatedTo.Body_wrap_Spa__c}<br /><br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Tiendas','','display:none;')}">
+                                            <hr/>
+                                            <b>Tiendas:</b><br />
+                                            Descuento de 20%: {!RelatedTo.Descuento_de_20__c}<br />
+                                            Descuento de $20: {!RelatedTo.Descuento_de_20_dollar__c}<br />
+                                            Descuento de 30%: {!RelatedTo.Descuento_de_30__c}<br />
+                                            Descuento de $30: {!RelatedTo.Descuento_de_30_Dollar__c}<br />
+                                            Un artículo del inventario gratis: {!RelatedTo.Un_art_culo_del_inventario_gratis__c}<br />
+                                            Un artículo del inventario 50% off: {!RelatedTo.Un_art_culo_del_inventario_50_off__c}<br /><br />
+                                            
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Farmacias','','display:none;')}">
+                                            <hr/>
+                                            <b>Farmacias:</b><br />
+                                            Descuento de 20%: {!RelatedTo.Descuento_de_20_Farmacias__c}<br />
+                                            Descuento de $20: {!RelatedTo.Descuento_de_20_dollar_Farmacias__c}<br />
+                                            Descuento de 30%: {!RelatedTo.Descuento_de_30_Farmacias__c}<br />
+                                            Descuento de $30: {!RelatedTo.Descuento_de_30_Dollar_Farmacias__c}<br />
+                                            Un artículo del inventario gratis: {!RelatedTo.Un_art_culo_del_inventario_gratis_Farmac__c}<br />
+                                            Un artículo del inventario 50% off: {!RelatedTo.Un_art_culo_del_inventario_50_off_Farmac__c}<br /><br />
+                                            
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Gasolineras','','display:none;')}">
+                                            <hr/>
+                                            <b>Gasolineras:</b><br />
+                                            Una cerveza gratis: {!RelatedTo.Una_cerveza_gratis__c}<br />
+                                            Cerveza 2 x 1: {!RelatedTo.Cerveza_2_x_1__c}<br />
+                                            $10 de gasolina: {!RelatedTo.X10_de_gasolina__c}<br />
+                                            $15 de gasolina: {!RelatedTo.X15_de_gasolina__c}<br />
+                                            $20 de gasolina: {!RelatedTo.X20_de_gasolina__c}<br />
+                                            Inspección de vehículo: {!RelatedTo.Inspecci_n_de_veh_culo__c}<br />
+                                            Cambio de Aceite y Filtro: {!RelatedTo.Cambio_de_Aceite_y_Filtro_Gasolineras__c}<br /><br />
+                                        </div>
+                                        
+                                        <div style="margin-left: 5%;{!IF(RelatedTo.Business_Categories__c=='Otros','','display:none;')}">
+                                            <hr/>
+                                            <b>Otro tipo de negocio:</b> {!RelatedTo.Favor_de_entrar_el_Tipo_de_Negocio_Otro__c}<br /><br />
+                        
+                                            Recompensa #1: {!RelatedTo.Otros_Recompensa_1__c}<br />
+                                            Recompensa #2: {!RelatedTo.Otros_Recompensa_2__c}<br />
+                                            Recompensa #3: {!RelatedTo.Otros_Recompensa_3__c}<br /><br />
+                                        </div>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            </body>
+          
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

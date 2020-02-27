@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Servihohar_Letterhead</letterhead>
+    <name>Servihogar Auto Response Email</name>
+    <style>formalLetter</style>
+    <subject>{!Lead.FirstName}... Gracias por su interés en Infopaginas Media</subject>
+    <textOnly>Estimado {!Lead.Name}, 
+
+Gracias por su interés en www.ServiHogarPro.com. Por favor, espere nuestra respuesta por teléfono o correo electrónico en las próximas  24 a 48 horas.
+
+Si usted tiene alguna pregunta, por favor no dude en contactarnos al 787.625.2160 o a nuestro email info@infopaginas.com.
+
+Para cualquier otra información de nuestros servicios, por favor visite nuestro website www.servihogarpro.com.
+
+Atentamente,
+Equipo ServiHogarPro</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

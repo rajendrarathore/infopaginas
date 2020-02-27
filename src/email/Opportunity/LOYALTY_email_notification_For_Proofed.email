@@ -1,0 +1,6 @@
+Hi,<br/>
+<br/>
+The opportunity <b>{!Opportunity.Name}</b> status has change to <b>Proofed</b>. <a href="{!Opportunity.Link}">Click here</a> to review it.<br/>
+<br/>
+
+Have a nice day!

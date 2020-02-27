@@ -1,0 +1,41 @@
+<html>
+<body bgcolor="#268da4!important" style="margin:0;padding:10px 0 0 0;background:#268da4!important">
+<table border="0" style="border:none; width: 100%; height: 100%">
+    <tr align="center">
+        <td style="width: 80%">
+            <table border="0" style="border:none; width: 80%">
+                <tr>
+                    <td bgcolor="#ffffff">
+						<img src="http://www.infopaginasmedia.com/assets/images/logo-infopaginas-email.png" style="padding: 30px; width: 250px">
+                        <p style="font-family:Arial;font-size:15px;line-height:18px; padding: 0 30px 10px 30px; color:#000000 !important">
+                            <b>Nombre de la Empresa:</b> {!Form__c.Nombre_de_la_Empresa__c}<br>
+                            <b>Teléfono que utilizaremos en anuncios:</b> {!Form__c.Telefono_que_utilizaremos_en_anuncios__c}
+                        </p>
+                        <p style="font-family:Arial;font-size:13px;line-height:18px; padding: 0 30px 30px 30px; color:#000000 !important">
+                                <br /><b>Opportunity Owner:</b> {!Form__c.Opportunity_Owner__c}
+                               <br /><b>Opportunity Name:</b> <a href="{!$Setup.Instance_URL__c.URL__c}{!Form__c.OpportunityId__c}" target="_blank"> {!Form__c.Opportunity__c}</a>
+                               <br /><b>Account Name:</b> {!Form__c.Account__c}
+                              
+                            <br /><br /><b>Datos de la persona de contacto:</b><br /><br />
+                            <b>Persona de contacto:</b>{!Form__c.Persona_de_Contacto__c}<br />
+                            <b>Email para envio de reportes de campaña:</b> {!Form__c.Email_para_envio_de_reportes_de_campana__c}<br />
+                            <br /><b>Anuncios de Google Adwords:</b><br /><br />
+                            <b>Keywords:</b> {!Form__c.Keywords__c}<br />
+                            <b>Website a Utilizar:</b>{!Form__c.Website_a_Utilizar__c}<br />
+                            <b>Servicios que desea promocionar:</b>{!Form__c.Servicios_que_dea_promocionar__c}<br />
+
+                            <br /><b>Anuncios de Facebook:</b><br /><br />
+                            <b>Página de Facebook:</b>{!Form__c.Pagina_de_Facebook__c}<br />
+                            <b>Con los anuncios me interesa:</b> {!Form__c.Con_los_anuncios_me_interesa__c}<br />
+                            <b>Comentarios:</b> {!Form__c.Comentarios__c}<br /><br /><br />
+                            <b>Form llenado por:</b> {!Form__c.Formulario_llenado_por__c}br /><br />
+   <b>View More Details:</b></b> {!Form__c.Link}<br/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

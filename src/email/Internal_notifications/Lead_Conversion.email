@@ -1,0 +1,15 @@
+<messaging:emailTemplate subject="Lead converted Account:{!relatedTo.name}" recipientType="Lead" relatedToType="Account">
+<messaging:htmlEmailBody >
+ <p>Hello,</p>
+ <p>The following lead has been converted to Account.</p>
+ <p>
+  Account Name: {!relatedTo.Name}
+  <br/>
+  Lead Owner: {!relatedTo.Owner.Name}
+  </p>
+  <p>Click on the link to access the lead directly: 
+  <apex:outputlink value="{!LEFT($Api.Partner_Server_URL_140,FIND('.com',$Api.Partner_Server_URL_140)+4)+relatedTo.Id}" 
+      target="_blank">{!relatedTo.Name}</apex:outputlink>
+  </p>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

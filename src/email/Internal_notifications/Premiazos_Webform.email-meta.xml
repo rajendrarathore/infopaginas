@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Premiazos Webform</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Premiazos Webform</name>
+    <style>none</style>
+    <subject>Lead generado por departamento de mercadeo: {!Lead.LeadSource}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

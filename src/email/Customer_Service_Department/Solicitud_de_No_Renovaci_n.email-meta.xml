@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Respuesta a cliente que solicita No Renovación de Contrato</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Solicitud de No Renovación</name>
+    <style>none</style>
+    <subject>Solicitud de No Renovación-</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

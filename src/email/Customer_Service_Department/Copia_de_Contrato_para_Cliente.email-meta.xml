@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email para cliente que solicita copia del contrato...</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Copia de Contrato para Cliente</name>
+    <style>none</style>
+    <subject>Contrato-NOMBRE DEL NEGOCIO</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

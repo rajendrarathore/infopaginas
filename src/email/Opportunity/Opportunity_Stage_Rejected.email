@@ -1,0 +1,5 @@
+Recibimos el siguiente caso Rejected correspondiente a:<br/><br/>
+
+Opportunity: <a href="{!Opportunity.Link}">{!Opportunity.Name}</a><br/>
+Rejected Reason: {!Opportunity.Rejected_Reason__c}<br/>
+Contract Number: {!Opportunity.Contract_Number__c}<br/>

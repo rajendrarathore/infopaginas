@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Premiazos Auto Response Email - Website Form</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Premiazos_Email_Letterhead</letterhead>
+    <name>Premiazos Auto Response Email</name>
+    <style>formalLetter</style>
+    <subject>{!Lead.FirstName}... Gracias por su interés en Premiazos</subject>
+    <textOnly>Estimado {!Lead.Name}, 
+
+Gracias por su interés en PREMIAZOS. Por favor, espere nuestra respuesta por teléfono o correo electrónico en las próximas 12 a 24 horas.
+
+Si usted tiene alguna pregunta, por favor no dude en contactarnos al 787.625.0555 o a nuestro email info@premiazos.com.
+
+Para cualquier otra información acerca de nuestro servicios, por favor visite www.premiazos.com.
+
+Atentamente,
+Equipo PREMIAZOS 
+Powered by: www.infopaginasmedia.com</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

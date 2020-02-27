@@ -1,0 +1,11 @@
+Saludos {!Account.Signer_Name__c}, 
+
+Reciba un saludo cordial de parte del equipo de Infopáginas. Confirmo el recibo de su comunicado del día _______, donde solicita la cancelación de su contrato {!Contract.ContractNumber} firmado el día {!Contract.CompanySignedDate}. 
+
+Según los Términos y Condiciones del Contrato, su solicitud está dentro del término de cancelación sin penalidad y con reembolso del depósito; por lo que confirmo que la misma ha sido procesada y se realizaron los ajustes en sistema para detener el débito directo a su cuenta.
+  
+El reembolso del débito del depósito se tramitó durante la tarde de hoy, por lo que debe verlo reflejado en su cuenta dentro de los próximo 3 a 5 días laborables.
+
+Cualquier duda o pregunta se puede comunicar al 787-625-0555 ext. 2357 o a través de correo electrónico servicioalcliente@infopaginas.com
+
+Cordialmente,

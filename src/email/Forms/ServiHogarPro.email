@@ -1,0 +1,47 @@
+<html>
+<body bgcolor="#268da4!important" style="margin:0;padding:10px 0 0 0;background:#268da4!important">
+<table border="0" style="border:none; width: 100%; height: 100%">
+    <tr align="center">
+        <td style="width: 80%">
+            <table border="0" style="border:none; width: 80%">
+                <tr>
+                    <td bgcolor="#ffffff">
+						<img src="http://www.infopaginasmedia.com/assets/images/logo-infopaginas-email.png" style="padding: 30px; width: 250px">
+                        <p style="font-family:Arial;font-size:15px;line-height:18px; padding: 0 30px 10px 30px; color:#000000 !important">
+                            <b>Nombre de dueño o contratista:</b> {!Form__c.Owner_or_Contractor_Name__c}
+                           <br/>
+						   <b>Nombre de la compañía:</b> {!Form__c.Nombre_de_la_Empresa__c}
+                           <br/>
+						   <b>Opportunity Owner:</b> {!Form__c.Opportunity_Owner__c}    <br/>
+							 <b>Correo electrónico:</b> {!Form__c.Email__c}
+                           <br/>
+						    <b>Número de celular:</b> {!Form__c.Smartphone_Number__c}
+                           <br/>
+      
+                        </p>
+                        <p style="font-family:Arial;font-size:13px;line-height:18px; padding: 0 30px 30px 30px; color:#000000 !important">
+                             <b>¿Cuánto tiempo lleva la compañía?:</b>{!Form__c.How_long_has_the_company_been_open__c}<br /><br />
+                            
+							
+							<b> Enlace de Facebook:</b>{!Form__c.Do_you_have_a_facebook_page_yes_no__c}<br /><br />
+							<b>Enlace de la página web:</b>{!Form__c.Do_you_have_a_website_yes_no__c}<br /><br />
+							
+							
+                            
+                            <b>Nombre de la compañía de seguro:</b>{!Form__c.Does_the_company_have_insurance_yes_no__c}<br /><br />
+                            <b>¿Cuáles son las especialidades de la compañía? (algún servicio en el cuál se enfoque y si atiende residencial, comercial, industrial)?:</b> {!Form__c.What_are_the_specialties_of_the_company__c}<br /><br />
+                            <b>¿Ofrecen garantías de trabajo? (¿Cuánto tiempo, por cuál tipo de trabajo, y si lo hacen por escrito o si se puede hacer si el cliente lo requiere?):</b> {!Form__c.Do_you_offer_work_guarantees_yes_no__c}<br /><br />
+                            <b>¿Any brand or product you want to highlight ?</b> {!Form__c.Any_brand_or_product_you_want_to_highl__c}<br /><br />
+							<b>Form llenado por:</b> {!Form__c.Formulario_llenado_por__c}
+
+<br />
+   <b>View More Details:</b></b> {!Form__c.Link}<br/>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,6 @@
+Hi,<br/>
+<br/>
+There is a new Customer Note Notification <b>{!Account.Name}</b>                                        <a href="{!Account.Link}">Click here</a> to review it.<br/>
+<br/>
+
+ <b>{!Account.Note__c}</b>

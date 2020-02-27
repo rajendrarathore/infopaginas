@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Lead_Owner_Change_Notification</letterhead>
+    <name>Email without appointment</name>
+    <style>freeForm</style>
+    <subject>Lead de Mercadeo Asignado</subject>
+    <textOnly>LEAD GENERADO POR EL DEPARTAMENTO DE MERCADEO.
+
+Alerta... {!Lead.OwnerFullName} se te ha asignado el siguiente lead:
+
+Lead Name: {!Lead.Name}
+Company: {!Lead.Company}
+Email: {!Lead.Email}
+Phone: {!Lead.Phone}
+
+
+Para ver más detalles de este lead en SalesForce has clic en el siguiente link: {!Lead.Link}
+
+
+
+RECUERDA…BIEN IMPORTANTE
+
+
+
+Favor contactar inmediatamente y notificar estatus de tu gestión. Este Lead se encuentra entrado en SalesForce por lo que debes añadir toda actividad que realices del mismo en SalesForce, para que todo el equipo pueda tener conocimiento del seguimiento o de los resultados de dicho Lead.
+
+
+
+Si no encontramos actividad y/o comentarios reflejados, se estará reasignando a otro consultor.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

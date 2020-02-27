@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email sent to internal team when chargent order payment status changed to &quot;error&apos; or &quot;stopped&quot;</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Infopaginas_Letterhead</letterhead>
+    <name>Internal Chargent Order Payment Status Error html</name>
+    <style>freeForm</style>
+    <subject>Chargent Transaction Error</subject>
+    <textOnly>Hello, 
+
+Recurring charge transaction {!ChargentOrders__Transaction__c.Name} from chargent order {!ChargentOrders__Transaction__c.ChargentOrders__Order__c} for Customer: {!ChargentOrders__Transaction__c.ChargentOrders__Billing_First__c} {!ChargentOrders__Transaction__c.ChargentOrders__Billing_Last__c} returned a status of &quot;{!ChargentOrders__Transaction__c.ChargentOrders__Response_Status__c}&quot; and response &quot;{!ChargentOrders__Transaction__c.ChargentOrders__Response_Message__c}&quot;of by bank on {!ChargentOrders__Transaction__c.CreatedDate}. Please review the details 
+
+
+{!Organization.Name} 
+{!Organization.Address} 
+{!Organization.Phone}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

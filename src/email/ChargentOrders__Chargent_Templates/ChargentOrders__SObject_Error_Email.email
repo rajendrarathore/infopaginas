@@ -1,0 +1,9 @@
+Hello {!ChargentOrders__Email_Notification__c.ChargentOrders__First_Name__c} 
+
+Chargent SObject Error has been occured. Please check the following information. 
+
+{!ChargentOrders__Email_Notification__c.ChargentOrders__Notification_Message__c} 
+
+
+Thanks, 
+{!Organization.Name}

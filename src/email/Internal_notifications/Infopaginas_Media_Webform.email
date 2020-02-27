@@ -1,0 +1,11 @@
+Alerta... Lead generado por el Departamento de Mercadeo. 
+
+Lead Source: {!Lead.LeadSource} 
+Lead ID: {!Lead.Id} 
+
+Lead Name: {!Lead.Name} 
+Company: {!Lead.Company} 
+Email: {!Lead.Email} 
+Phone: {!Lead.Phone} 
+
+Nota: Este Email ha sido automáticamente generado por SalesForce. Todos los datos han sido guardados en la base de datos.

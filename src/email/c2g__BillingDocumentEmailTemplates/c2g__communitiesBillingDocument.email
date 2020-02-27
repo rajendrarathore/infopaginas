@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="{!relatedTo.fferpcore__Account__r.Name} {!$Label.c2g__communitiesemailbillingdocument} {!relatedTo.Name}" recipientType="Contact" relatedToType="fferpcore__BillingDocument__c">
+<messaging:plainTextEmailBody >
+{!$Label.c2g__communitiesemailbillingdocumentnumber} {!relatedTo.Name}
+
+{!$Label.c2g__communitiesemailbodysignup} {!$Label.c2g__communitiesemailbodycommunity} {!$Label.c2g__communitiesemailbodytoviewbillingdocument}
+
+{!$Label.c2g__communitiesemailfootertext}
+{!$Label.c2g__communitiesemailfooterfurl}
+</messaging:plainTextEmailBody>
+<messaging:HtmlEmailBody >
+{!$Label.c2g__communitiesemailbillingdocumentnumber} {!relatedTo.Name}<br/><br/>
+
+{!$Label.c2g__communitiesemailbodysignup} <a href="CommunityURL">{!$Label.c2g__communitiesemailbodycommunity}</a> {!$Label.c2g__communitiesemailbodytoviewbillingdocument}<br/><br/>
+
+{!$Label.c2g__communitiesemailfootertext}<br/>
+<a href="http://www.financialforce.com">{!$Label.c2g__communitiesemailfooterfurl}</a>
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

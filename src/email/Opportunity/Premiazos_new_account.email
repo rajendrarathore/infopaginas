@@ -1,0 +1,9 @@
+Hi,<br/>
+<br/>
+
+You have been assigned to the {!Account.Name} account. Please <a href="{!Account.Link}">Click here</a> to review the opportunity.
+
+<br/>
+<br/>
+
+Have a nice day!

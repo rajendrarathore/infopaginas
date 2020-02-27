@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Solicitud de elementos para crear la página web</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>WEB - Solicitud de Elementos</name>
+    <style>none</style>
+    <subject>Solicitud de Elementos - *Nombre de la Compañía</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,6 @@
+The following contract has been registered: 
+Company: {!Contract.Account} 
+Contract: {!Contract.ContractNumber}
+Owner: {!Contract.OwnerFullName}
+
+Click on the link to access the contract: {!Contract.Link}

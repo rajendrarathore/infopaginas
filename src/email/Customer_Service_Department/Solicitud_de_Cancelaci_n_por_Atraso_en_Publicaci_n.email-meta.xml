@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Respuesta a cliente que solicita cancelación por alegado atraso en la publicación de sus productos.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Solicitud de Cancelación por Atraso en Publicación</name>
+    <style>none</style>
+    <subject>Solicitud de Cancelación-</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

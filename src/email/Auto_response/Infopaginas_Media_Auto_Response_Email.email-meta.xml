@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Infopaginas Media Auto Response Email - Website Form</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Infopaginas_Media_Letterhead</letterhead>
+    <name>Infopaginas Media Auto Response Email</name>
+    <style>formalLetter</style>
+    <subject>{!Lead.FirstName}... Gracias por su interés en Infopaginas Media</subject>
+    <textOnly>Estimado {!Lead.Name},
+
+Gracias por su interés en Infopaginas Media. Por favor, espere nuestra respuesta por teléfono o correo electrónico en las próximas 24 a 48 horas.
+
+Si usted tiene alguna pregunta, por favor no dude en contactarnos al 787.625.2160 o a nuestro email info@infopaginasmedia.com
+
+Para cualquier otra información acerca de nuestro servicios, por favor visite www.infopaginasmedia.com.
+
+Atentamente,
+Equipo Infopaginas Media</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

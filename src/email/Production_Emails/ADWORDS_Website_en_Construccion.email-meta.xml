@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>La campaña de Adwords aún no ha iniciado porque la página web esta en construcción.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ADWORDS - Website en Construccion</name>
+    <style>none</style>
+    <subject>Campaña de Adwords - [Cliente]</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

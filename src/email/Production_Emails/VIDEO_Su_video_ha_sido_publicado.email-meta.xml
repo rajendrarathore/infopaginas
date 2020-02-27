@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>El video ha sido publicado en el perfil</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>VIDEO Su video ha sido publicado</name>
+    <style>none</style>
+    <subject>Video Publicado - [CLIENT]</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

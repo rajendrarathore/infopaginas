@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Solicitud de recompensas e información para el perfil del cliente de Premiazos.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PREMIAZOS Solicitud de elementos</name>
+    <style>none</style>
+    <subject>Premiazos: Solicitud de elementos</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
